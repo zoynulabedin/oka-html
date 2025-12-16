@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - One Kingdom Church</title>
+    <meta
+      name="description"
+      content="Learn about One Kingdom Church's mission, values, and core beliefs"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="font-sans bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-transparent z-50">
+      <div class="container mx-auto px-4 md:px-6 py-3 md:py-4">
+        <div class="flex items-center justify-between">
+          <div class="logo-container">
+            <img
+              src="assets/images/main-logo.png"
+              alt="One Kingdom Church Logo"
+              class="h-10 md:h-12 w-auto"
+            />
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-6 lg:space-x-8 items-center">
+            <a
+              href="index.html"
+              class="nav-link text-[#0A3B5C] font-bold text-xs lg:text-sm hover:text-[#C41E3A] transition-colors uppercase tracking-wide"
+              >HOME</a
+            >
+            <a
+              href="about.html"
+              class="nav-link active text-[#0A3B5C] font-bold text-xs lg:text-sm hover:text-[#C41E3A] transition-colors uppercase tracking-wide"
+              >ABOUT</a
+            >
+            <a
+              href="sundays.html"
+              class="nav-link text-[#0A3B5C] font-bold text-xs lg:text-sm hover:text-[#C41E3A] transition-colors uppercase tracking-wide"
+              >SUNDAYS</a
+            >
+            <a
+              href="next-steps.html"
+              class="nav-link text-[#0A3B5C] font-bold text-xs lg:text-sm hover:text-[#C41E3A] transition-colors uppercase tracking-wide"
+              >NEXT STEPS</a
+            >
+            <a
+              href="#"
+              class="bg-[#0A3B5C] text-white px-5 lg:px-6 py-2 rounded-full text-xs lg:text-sm font-bold hover:bg-[#C41E3A] transition-all duration-300 uppercase tracking-wide"
+              >GIVE</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden text-[#0A3B5C] focus:outline-none"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="mobile-menu-overlay"
+          style="
+            transform: translateX(-100%);
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+          "
+        >
+          <div class="mobile-menu-content">
+            <!-- Logo at Top Center -->
+            <img
+              src="assets/images/main-logo.png"
+              alt="OKC Logo"
+              class="mobile-menu-logo"
+            />
+
+            <!-- Close Button -->
+            <button id="mobile-menu-close" class="mobile-menu-close">
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+
+            <!-- Menu Items -->
+            <nav class="flex flex-col space-y-6">
+              <a
+                href="index.html"
+                class="block text-black font-bold text-2xl hover:text-[#C41E3A] transition-colors uppercase tracking-wide"
+                >HOME</a
+              >
+              <a
+                href="about.html"
+                class="block text-[#C41E3A] font-bold text-2xl uppercase tracking-wide"
+                >ABOUT</a
+              >
+              <a
+                href="sundays.html"
+                class="block text-black font-bold text-2xl hover:text-[#C41E3A] transition-colors uppercase tracking-wide"
+                >SUNDAYS</a
+              >
+              <a
+                href="next-steps.html"
+                class="block text-black font-bold text-2xl hover:text-[#C41E3A] transition-colors uppercase tracking-wide"
+                >NEXT STEPS</a
+              >
+              <a
+                href="#"
+                class="block bg-[#0A3B5C] text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-[#C41E3A] transition-all duration-300 uppercase tracking-wide text-center mt-8"
+                >GIVE</a
+              >
+            </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-[70vh] sm:min-h-[75vh] md:min-h-[80vh] lg:min-h-[85vh] flex items-center justify-center pt-20 sm:pt-24 md:pt-28 lg:pt-32 pb-10 sm:pb-12 md:pb-16 lg:pb-20 hero-bg-container overflow-hidden"
+    >
+      <div class="absolute inset-0 about-hero-bg"></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-white/40 via-white/50 to-white/70"
+      ></div>
+      <div
+        class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 text-center relative z-10"
+      >
+        <p
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-9xl 2xl:text-9xl mb-2 sm:mb-3 md:mb-4 lg:mb-5 font-bold animate-fade-in"
+          style="font-family: 'Dancing Script', cursive"
+        >
+          Welcome to
+        </p>
+        <h1
+          class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black text-[#0A3B5C] leading-tight md:leading-[0.95] lg:leading-[0.9] mb-3 sm:mb-4 md:mb-5 lg:mb-6 tracking-tight uppercase animate-slide-down px-2 sm:px-4"
+          style="font-family: 'Poppins', sans-serif"
+        >
+          ONE KINGDOM CHURCH
+        </h1>
+        <img
+          src="assets/images/removebg-kc-mo_6.png"
+          alt="KC & MO"
+          class="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto mx-auto animate-fade-in"
+        />
+      </div>
+    </section>
+
+    <!-- Circle Logo - Positioned between Hero and Mission -->
+    <div
+      class="circle-logo-position absolute right-4 sm:right-6 md:right-8 lg:right-12 xl:right-16 2xl:right-20 z-40"
+    >
+      <img
+        src="assets/images/circle-logo.png"
+        alt="One Kingdom Church Anniversary Logo"
+        class="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 xl:w-44 xl:h-44 2xl:w-48 2xl:h-48 animate-spin-slow"
+      />
+    </div>
+
+    <!-- Mission Statement -->
+    <section class="py-16 md:py-20 bg-[#F5E6D3] relative z-0">
+      <div class="container mx-auto px-6">
+        <div class="max-w-5xl mx-auto text-center">
+          <h2
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-[#0A3B5C] leading-tight uppercase px-4"
+            style="font-family: 'Poppins', sans-serif"
+          >
+            OUR MISSION IS LOREM IPSUM<br class="hidden md:block" />
+            DOLOR SIT AMET, CONSECTETUER<br class="hidden md:block" />
+            ADIPISCING ELIT, SED DIAMMY.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story Section with Photo Collage -->
+    <section class="relative py-0 bg-white">
+      <!-- Photo Collage Background -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-0">
+        <div class="aspect-square overflow-hidden">
+          <img
+            src="assets/images/2.jpg"
+            alt="Community"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="aspect-square overflow-hidden">
+          <img
+            src="assets/images/10.jpg"
+            alt="Community"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="aspect-square overflow-hidden">
+          <img
+            src="assets/images/11.jpg"
+            alt="Community"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="aspect-square overflow-hidden">
+          <img
+            src="assets/images/12.jpg"
+            alt="Community"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- Our Story Overlay Card -->
+      <div
+        class="container mx-auto px-4 md:px-6 relative -mt-24 md:-mt-32 lg:-mt-40 pb-16 md:pb-20 lg:pb-24"
+      >
+        <div
+          class="max-w-5xl mx-auto bg-[#0A3B5C] rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-16 lg:p-20 shadow-2xl"
+        >
+          <img
+            src="assets/images/story.png"
+            alt="Our Story"
+            class="h-20 md:h-24 lg:h-28 w-auto mx-auto mb-6 md:mb-8 lg:-mt-32"
+          />
+          <p
+            class="text-white text-base md:text-lg lg:text-xl leading-relaxed text-center max-w-4xl mx-auto"
+          >
+            Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+            quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+            aliquip ex ea commodo consequat. Duis autem vel eum iriure Lorem
+            ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+            nibh
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- marque section copy from home ONE MISSON, ONE HOPE -->
+    <section class="bg-[#9B2C2C] py-2.5 md:py-5 relative z-20 overflow-hidden">
+      <div class="marquee-wrapper">
+        <div class="marquee-content-wrapper">
+          <!-- Set 1 -->
+          <span class="text-white font-bold text-base md:text-lg mx-3 md:mx-4"
+            >ONE HOPE</span
+          >
+          <span
+            class="inline-flex items-center justify-center w-5 h-5 md:w-6 md:h-6 border-2 border-white rounded-full text-white text-[10px] md:text-xs font-bold align-middle"
+            >1</span
+          >
+          <span class="text-white font-bold text-base md:text-lg mx-3 md:mx-4"
+            >ONE FAMILY</span
+          >
+          <span
+            class="inline-flex items-center justify-center w-5 h-5 md:w-6 md:h-6 border-2 border-white rounded-full text-white text-[10px] md:text-xs font-bold align-middle"
+            >1</span
+          >
+          <span class="text-white font-bold text-base md:text-lg mx-3 md:mx-4"
+            >ONE MISSION</span
+          >
+          <span
+            class="inline-flex items-center justify-center w-5 h-5 md:w-6 md:h-6 border-2 border-white rounded-full text-white text-[10px] md:text-xs font-bold align-middle"
+            >1</span
+          >
+
+          <!-- Set 2 -->
+          <span class="text-white font-bold text-base md:text-lg mx-3 md:mx-4"
+            >ONE HOPE</span
+          >
+          <span
+            class="inline-flex items-center justify-center w-5 h-5 md:w-6 md:h-6 border-2 border-white rounded-full text-white text-[10px] md:text-xs font-bold align-middle"
+            >1</span
+          >
+          <span class="text-white font-bold text-base md:text-lg mx-3 md:mx-4"
+            >ONE FAMILY</span
+          >
+          <span
+            class="inline-flex items-center justify-center w-5 h-5 md:w-6 md:h-6 border-2 border-white rounded-full text-white text-[10px] md:text-xs font-bold align-middle"
+            >1</span
+          >
+          <span class="text-white font-bold text-base md:text-lg mx-3 md:mx-4"
+            >ONE MISSION</span
+          >
+          <span
+            class="inline-flex items-center justify-center w-5 h-5 md:w-6 md:h-6 border-2 border-white rounded-full text-white text-[10px] md:text-xs font-bold align-middle"
+            >1</span
+          >
+
+          <!-- Set 3 -->
+          <span class="text-white font-bold text-base md:text-lg mx-3 md:mx-4"
+            >ONE HOPE</span
+          >
+          <span
+            class="inline-flex items-center justify-center w-5 h-5 md:w-6 md:h-6 border-2 border-white rounded-full text-white text-[10px] md:text-xs font-bold align-middle"
+            >1</span
+          >
+          <span class="text-white font-bold text-base md:text-lg mx-3 md:mx-4"
+            >ONE FAMILY</span
+          >
+          <span
+            class="inline-flex items-center justify-center w-5 h-5 md:w-6 md:h-6 border-2 border-white rounded-full text-white text-[10px] md:text-xs font-bold align-middle"
+            >1</span
+          >
+          <span class="text-white font-bold text-base md:text-lg mx-3 md:mx-4"
+            >ONE MISSION</span
+          >
+          <span
+            class="inline-flex items-center justify-center w-5 h-5 md:w-6 md:h-6 border-2 border-white rounded-full text-white text-[10px] md:text-xs font-bold align-middle"
+            >1</span
+          >
+
+          <!-- Set 4 -->
+          <span class="text-white font-bold text-base md:text-lg mx-3 md:mx-4"
+            >ONE HOPE</span
+          >
+          <span
+            class="inline-flex items-center justify-center w-5 h-5 md:w-6 md:h-6 border-2 border-white rounded-full text-white text-[10px] md:text-xs font-bold align-middle"
+            >1</span
+          >
+          <span class="text-white font-bold text-base md:text-lg mx-3 md:mx-4"
+            >ONE FAMILY</span
+          >
+          <span
+            class="inline-flex items-center justify-center w-5 h-5 md:w-6 md:h-6 border-2 border-white rounded-full text-white text-[10px] md:text-xs font-bold align-middle"
+            >1</span
+          >
+          <span class="text-white font-bold text-base md:text-lg mx-3 md:mx-4"
+            >ONE MISSION</span
+          >
+          <span
+            class="inline-flex items-center justify-center w-5 h-5 md:w-6 md:h-6 border-2 border-white rounded-full text-white text-[10px] md:text-xs font-bold align-middle"
+            >1</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- G.R.A.C.E. Section -->
+    <section class="bg-[#B8D4E8] pt-10 lg:pt-0">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <!-- Left Column - Content -->
+          <div>
+            <h3
+              class="text-2xl md:text-3xl font-black text-[#0A3B5C] mb-2 uppercase"
+              style="font-family: 'Poppins', sans-serif"
+            >
+              HOW WE LIVE OUT
+            </h3>
+            <h2
+              class="text-5xl md:text-6xl lg:text-7xl font-black text-[#0A3B5C] mb-12 md:mb-16 uppercase"
+              style="font-family: 'Poppins', sans-serif"
+            >
+              G.R.A.C.E.
+            </h2>
+
+            <div class="space-y-8 md:space-y-10">
+              <!-- GOSPEL -->
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0">
+                  <svg
+                    class="w-8 h-8 md:w-10 md:h-10 text-[#0A3B5C]"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V4C20 2.9 19.1 2 18 2M18 20H6V4H18V20M9 8H15V10H9V8M9 11H15V13H9V11M9 14H15V16H9V14Z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4
+                    class="text-xl md:text-2xl font-black text-[#0A3B5C] mb-2 uppercase"
+                    style="font-family: 'Poppins', sans-serif"
+                  >
+                    GOSPEL
+                  </h4>
+                  <p
+                    class="text-[#0A3B5C] text-sm md:text-base leading-relaxed"
+                  >
+                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit, sed diam
+                  </p>
+                </div>
+              </div>
+
+              <!-- RADICAL MULTIPLICATION -->
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0">
+                  <svg
+                    class="w-8 h-8 md:w-10 md:h-10 text-[#0A3B5C]"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M16 11C17.66 11 18.99 9.66 18.99 8S17.66 5 16 5 13 6.34 13 8 14.34 11 16 11M8 11C9.66 11 10.99 9.66 10.99 8S9.66 5 8 5 5 6.34 5 8 6.34 11 8 11M8 13C5.67 13 1 14.17 1 16.5V19H15V16.5C15 14.17 10.33 13 8 13M16 13C15.71 13 15.38 13.02 15.03 13.05C16.19 13.89 17 15.02 17 16.5V19H23V16.5C23 14.17 18.33 13 16 13Z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4
+                    class="text-xl md:text-2xl font-black text-[#0A3B5C] mb-2 uppercase"
+                    style="font-family: 'Poppins', sans-serif"
+                  >
+                    RADICAL MULTIPLICATION
+                  </h4>
+                  <p
+                    class="text-[#0A3B5C] text-sm md:text-base leading-relaxed"
+                  >
+                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit, sed diam
+                  </p>
+                </div>
+              </div>
+
+              <!-- ALL PEOPLE -->
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0">
+                  <svg
+                    class="w-8 h-8 md:w-10 md:h-10 text-[#0A3B5C]"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2M11 19.93C7.05 19.44 4 16.08 4 12C4 11.38 4.08 10.79 4.21 10.21L9 15V16C9 17.1 9.9 18 11 18V19.93M17.9 17.39C17.64 16.58 16.9 16 16 16H15V13C15 12.45 14.55 12 14 12H8V10H10C10.55 10 11 9.55 11 9V7H13C14.1 7 15 6.1 15 5V4.59C17.93 5.78 20 8.65 20 12C20 14.08 19.2 15.97 17.9 17.39Z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4
+                    class="text-xl md:text-2xl font-black text-[#0A3B5C] mb-2 uppercase"
+                    style="font-family: 'Poppins', sans-serif"
+                  >
+                    ALL PEOPLE
+                  </h4>
+                  <p
+                    class="text-[#0A3B5C] text-sm md:text-base leading-relaxed"
+                  >
+                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit, sed diam
+                  </p>
+                </div>
+              </div>
+
+              <!-- CONVICTIONAL STEWARDSHIP -->
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0">
+                  <svg
+                    class="w-8 h-8 md:w-10 md:h-10 text-[#0A3B5C]"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 6H16V4C16 2.89 15.11 2 14 2H10C8.89 2 8 2.89 8 4V6H4C2.89 6 2.01 6.89 2.01 8L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6M10 4H14V6H10V4M20 19H4V8H20V19M13 10H11V13H8V15H11V18H13V15H16V13H13V10Z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4
+                    class="text-xl md:text-2xl font-black text-[#0A3B5C] mb-2 uppercase"
+                    style="font-family: 'Poppins', sans-serif"
+                  >
+                    CONVICTIONAL STEWARDSHIP
+                  </h4>
+                  <p
+                    class="text-[#0A3B5C] text-sm md:text-base leading-relaxed"
+                  >
+                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit, sed diam
+                  </p>
+                </div>
+              </div>
+
+              <!-- EVERYDAY DEPENDENCE -->
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0">
+                  <svg
+                    class="w-8 h-8 md:w-10 md:h-10 text-[#0A3B5C]"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4
+                    class="text-xl md:text-2xl font-black text-[#0A3B5C] mb-2 uppercase"
+                    style="font-family: 'Poppins', sans-serif"
+                  >
+                    EVERYDAY DEPENDENCE
+                  </h4>
+                  <p
+                    class="text-[#0A3B5C] text-sm md:text-base leading-relaxed"
+                  >
+                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit, sed diam
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column - Image -->
+          <div class="relative">
+            <img
+              src="assets/images/3.jpg"
+              alt="Community Member"
+              class="shadow-xl w-full"
+            />
+            <div class="absolute -bottom-20 -right-10 z-10">
+              <img
+                src="assets/images/removebg-okc-label-2_8.png"
+                alt="One Kingdom Church Label"
+                class="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Beliefs Section -->
+    <section class="relative py-16 md:py-20 lg:py-24 bg-[#9B2C2C]">
+      <!-- OKC Badge - Top Right -->
+
+      <div class="container mx-auto px-6 lg:px-12">
+        <div class="w-full">
+          <h2
+            class="text-4xl md:text-5xl lg:text-6xl font-black mb-8 md:mb-10 uppercase text-white"
+            style="font-family: 'Poppins', sans-serif"
+          >
+            OUR CORE BELIEFS
+          </h2>
+
+          <!-- Belief Tabs -->
+          <div class="flex flex-wrap gap-3 md:gap-4 mb-8 md:mb-10">
+            <button
+              class="belief-tab active px-4 md:px-6 py-2 text-white font-bold text-xs md:text-sm lg:text-2xl uppercase border-b-2 border-white transition-all"
+              data-tab="god"
+            >
+              GOD
+            </button>
+            <button
+              class="belief-tab px-4 md:px-6 py-2 text-white font-bold text-xs md:text-sm lg:text-2xl uppercase border-b-2 border-transparent hover:border-white/50 transition-all"
+              data-tab="jesus"
+            >
+              JESUS
+            </button>
+            <button
+              class="belief-tab px-4 md:px-6 py-2 text-white font-bold text-xs md:text-sm lg:text-2xl uppercase border-b-2 border-transparent hover:border-white/50 transition-all"
+              data-tab="holy-spirit"
+            >
+              HOLY SPIRIT
+            </button>
+            <button
+              class="belief-tab px-4 md:px-6 py-2 text-white font-bold text-xs md:text-sm lg:text-2xl uppercase border-b-2 border-transparent hover:border-white/50 transition-all"
+              data-tab="scripture"
+            >
+              SCRIPTURE
+            </button>
+            <button
+              class="belief-tab px-4 md:px-6 py-2 text-white font-bold text-xs md:text-sm lg:text-2xl uppercase border-b-2 border-transparent hover:border-white/50 transition-all"
+              data-tab="humanity"
+            >
+              HUMANITY
+            </button>
+            <button
+              class="belief-tab px-4 md:px-6 py-2 text-white font-bold text-xs md:text-sm lg:text-2xl uppercase border-b-2 border-transparent hover:border-white/50 transition-all"
+              data-tab="salvation"
+            >
+              SALVATION
+            </button>
+            <button
+              class="belief-tab px-4 md:px-6 py-2 text-white font-bold text-xs md:text-sm lg:text-2xl uppercase border-b-2 border-transparent hover:border-white/50 transition-all"
+              data-tab="church"
+            >
+              THE CHURCH
+            </button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="w-full">
+            <!-- GOD Content -->
+            <div class="tab-content active" id="god-content">
+              <p
+                class="text-white text-base md:text-xl lg:text-2xl leading-relaxed mb-8 md:mb-10"
+              >
+                We believe that there is one God, eternally existent in three
+                persons: God the Father, God the Son, and God the Holy Spirit.
+                These three are co-equal and co-eternal. We believe in one God
+                who is the creator and sustainer of all things, who is holy,
+                loving, just, and merciful.
+              </p>
+              <div class="flex justify-between gap-4">
+                <p class="text-white text-sm md:text-base font-semibold">
+                  For our full statement of faith, download a PDF.
+                </p>
+                <a
+                  href="#"
+                  class="bg-white text-[#9B2C2C] px-6 md:px-8 py-2 md:py-3 rounded-md inline-block font-bold text-sm md:text-base hover:bg-[#0A3B5C] hover:text-white transition-all duration-300 uppercase whitespace-nowrap"
+                >
+                  DOWNLOAD PDF
+                </a>
+              </div>
+            </div>
+
+            <!-- JESUS Content -->
+            <div class="tab-content hidden" id="jesus-content">
+              <p
+                class="text-white text-base md:text-xl lg:text-2xl leading-relaxed mb-8 md:mb-10"
+              >
+                We believe that Jesus Christ was conceived by the Holy Spirit,
+                born of the virgin Mary, and is true God and true man. We
+                believe in His sinless life, His substitutionary death on the
+                cross, His bodily resurrection, and His ascension to the right
+                hand of the Father.
+              </p>
+              <div class="flex justify-between gap-4">
+                <p class="text-white text-sm md:text-base font-semibold">
+                  For our full statement of faith, download a PDF.
+                </p>
+                <a
+                  href="#"
+                  class="bg-white text-[#9B2C2C] px-6 md:px-8 py-2 md:py-3 rounded-md inline-block font-bold text-sm md:text-base hover:bg-[#0A3B5C] hover:text-white transition-all duration-300 uppercase whitespace-nowrap"
+                >
+                  DOWNLOAD PDF
+                </a>
+              </div>
+            </div>
+
+            <!-- HOLY SPIRIT Content -->
+            <div class="tab-content hidden" id="holy-spirit-content">
+              <p
+                class="text-white text-base md:text-xl lg:text-2xl leading-relaxed mb-8 md:mb-10"
+              >
+                We believe in the Holy Spirit who convicts, regenerates,
+                sanctifies, and empowers believers for Christian life and
+                service. The Holy Spirit indwells every believer and produces
+                spiritual fruit in their lives.
+              </p>
+              <div class="flex justify-between gap-4">
+                <p class="text-white text-sm md:text-base font-semibold">
+                  For our full statement of faith, download a PDF.
+                </p>
+                <a
+                  href="#"
+                  class="bg-white text-[#9B2C2C] px-6 md:px-8 py-2 md:py-3 rounded-md inline-block font-bold text-sm md:text-base hover:bg-[#0A3B5C] hover:text-white transition-all duration-300 uppercase whitespace-nowrap"
+                >
+                  DOWNLOAD PDF
+                </a>
+              </div>
+            </div>
+
+            <!-- SCRIPTURE Content -->
+            <div class="tab-content hidden" id="scripture-content">
+              <p
+                class="text-white text-base md:text-xl lg:text-2xl leading-relaxed mb-8 md:mb-10"
+              >
+                We believe that the Bible is the inspired Word of God and is the
+                final authority for faith and life. Scripture is inerrant in its
+                original manuscripts and is sufficient for all matters of faith
+                and practice.
+              </p>
+              <div class="flex justify-between gap-4">
+                <p class="text-white text-sm md:text-base font-semibold">
+                  For our full statement of faith, download a PDF.
+                </p>
+                <a
+                  href="#"
+                  class="bg-white text-[#9B2C2C] px-6 md:px-8 py-2 md:py-3 rounded-md inline-block font-bold text-sm md:text-base hover:bg-[#0A3B5C] hover:text-white transition-all duration-300 uppercase whitespace-nowrap"
+                >
+                  DOWNLOAD PDF
+                </a>
+              </div>
+            </div>
+
+            <!-- HUMANITY Content -->
+            <div class="tab-content hidden" id="humanity-content">
+              <p
+                class="text-white text-base md:text-xl lg:text-2xl leading-relaxed mb-8 md:mb-10"
+              >
+                We believe that man was created in the image of God, but because
+                of sin, was alienated from God. All humanity is born with a
+                sinful nature and is in need of redemption through Jesus Christ.
+              </p>
+              <div class="flex justify-between gap-4">
+                <p class="text-white text-sm md:text-base font-semibold">
+                  For our full statement of faith, download a PDF.
+                </p>
+                <a
+                  href="#"
+                  class="bg-white text-[#9B2C2C] px-6 md:px-8 py-2 md:py-3 rounded-md inline-block font-bold text-sm md:text-base hover:bg-[#0A3B5C] hover:text-white transition-all duration-300 uppercase whitespace-nowrap"
+                >
+                  DOWNLOAD PDF
+                </a>
+              </div>
+            </div>
+
+            <!-- SALVATION Content -->
+            <div class="tab-content hidden" id="salvation-content">
+              <p
+                class="text-white text-base md:text-xl lg:text-2xl leading-relaxed mb-8 md:mb-10"
+              >
+                We believe that salvation is by grace alone through faith alone
+                in Christ alone. That alienation from God can be removed only by
+                accepting God's gift of salvation which is made possible only
+                through the death and resurrection of Jesus Christ.
+              </p>
+              <div class="flex justify-between gap-4">
+                <p class="text-white text-sm md:text-base font-semibold">
+                  For our full statement of faith, download a PDF.
+                </p>
+                <a
+                  href="#"
+                  class="bg-white text-[#9B2C2C] px-6 md:px-8 py-2 md:py-3 rounded-md inline-block font-bold text-sm md:text-base hover:bg-[#0A3B5C] hover:text-white transition-all duration-300 uppercase whitespace-nowrap"
+                >
+                  DOWNLOAD PDF
+                </a>
+              </div>
+            </div>
+
+            <!-- THE CHURCH Content -->
+            <div class="tab-content hidden" id="church-content">
+              <p
+                class="text-white text-base md:text-xl lg:text-2xl leading-relaxed mb-8 md:mb-10"
+              >
+                We believe in the universal church, the body of Christ, composed
+                of all believers. The church exists to worship God, make
+                disciples, and serve the world in the name of Jesus Christ.
+              </p>
+              <div class="flex justify-between gap-4">
+                <p class="text-white text-sm md:text-base font-semibold">
+                  For our full statement of faith, download a PDF.
+                </p>
+                <a
+                  href="#"
+                  class="bg-white text-[#9B2C2C] px-6 md:px-8 py-2 md:py-3 rounded-md inline-block font-bold text-sm md:text-base hover:bg-[#0A3B5C] hover:text-white transition-all duration-300 uppercase whitespace-nowrap"
+                >
+                  DOWNLOAD PDF
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Tab functionality for Core Beliefs
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".belief-tab");
+        const contents = document.querySelectorAll(".tab-content");
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            const targetTab = this.getAttribute("data-tab");
+
+            // Remove active class from all tabs
+            tabs.forEach((t) => {
+              t.classList.remove("active");
+              t.classList.remove("border-white");
+              t.classList.add("border-transparent");
+            });
+
+            // Add active class to clicked tab
+            this.classList.add("active");
+            this.classList.remove("border-transparent");
+            this.classList.add("border-white");
+
+            // Hide all content
+            contents.forEach((content) => {
+              content.classList.add("hidden");
+              content.classList.remove("active");
+            });
+
+            // Show target content
+            const targetContent = document.getElementById(
+              targetTab + "-content"
+            );
+            if (targetContent) {
+              targetContent.classList.remove("hidden");
+              targetContent.classList.add("active");
+            }
+          });
+        });
+      });
+    </script>
+
+    <!-- New Content Section -->
+    <section class="py-16 md:py-20 lg:py-24 bg-[#B8D4E8]">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <!-- Left Column - Image -->
+          <div>
+            <img
+              src="assets/images/3.jpg"
+              alt="Community"
+              class="rounded-2xl shadow-xl w-full"
+            />
+          </div>
+
+          <!-- Right Column - Content -->
+          <div>
+            <h2
+              class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 md:mb-8 uppercase text-[#0A3B5C]"
+              style="font-family: 'Poppins', sans-serif"
+            >
+              LOREM IPSUM
+            </h2>
+            <p class="text-[#0A3B5C] text-base md:text-lg leading-relaxed">
+              Dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing
+              elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+              magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+              nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+              aliquip ex ea commodo consequat. Duis autem vel eum iriure Lorem
+              ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Section -->
+
+    <!-- Leadership CTA with Background -->
+    <section class="relative py-20 md:py-24 lg:py-28 overflow-hidden">
+      <!-- Background Image with Overlay -->
+      <div class="absolute inset-0">
+        <img
+          src="assets/images/15.jpg"
+          alt="Leadership Background"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-[#0A3B5C]/70"></div>
+      </div>
+
+      <!-- Red Pennant Flag - Left Side -->
+      <div class="absolute left-0 top-1/2 -translate-y-1/2 z-10">
+        <svg
+          class="w-32 h-40 md:w-40 md:h-48 lg:w-48 lg:h-56"
+          viewBox="0 0 200 280"
+          fill="none"
+        >
+          <!-- Pennant shape -->
+          <path d="M0 0 L200 140 L0 280 Z" fill="#9B2C2C" />
+          <!-- Text on pennant -->
+          <text
+            x="50"
+            y="120"
+            fill="white"
+            font-family="'Brush Script MT', cursive"
+            font-size="32"
+            font-style="italic"
+            transform="rotate(-15 50 120)"
+          >
+            One
+          </text>
+          <text
+            x="40"
+            y="160"
+            fill="white"
+            font-family="'Brush Script MT', cursive"
+            font-size="32"
+            font-style="italic"
+            transform="rotate(-15 40 160)"
+          >
+            Kingdom
+          </text>
+        </svg>
+      </div>
+
+      <!-- Content -->
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2
+            class="text-5xl md:text-6xl lg:text-7xl font-black mb-8 md:mb-10 uppercase text-white"
+            style="font-family: 'Poppins', sans-serif"
+          >
+            LEADERSHIP
+          </h2>
+          <a
+            href="#"
+            class="bg-[#F5E6D3] text-[#0A3B5C] px-8 md:px-10 py-3 md:py-4 rounded-md inline-block font-bold text-sm md:text-base hover:bg-white transition-all duration-300 uppercase"
+          >
+            MEET THE TEAM
+          </a>
+        </div>
+      </div>
+
+      <!-- Beige Bottom Border -->
+      <div
+        class="absolute bottom-0 left-0 right-0 h-16 md:h-20 bg-[#F5E6D3]"
+      ></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#F5E6D3] text-[#0A3B5C] py-16">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 mb-8">
+          <div>
+            <h3 class="text-4xl font-black mb-6 leading-tight">
+              ONE HOPE.<br />ONE FAMILY.<br />ONE MISSION.
+            </h3>
+            <div class="flex items-center space-x-4">
+              <img
+                src="assets/images/removebg-footer-logo_4.png"
+                alt="One Kingdom Church Logo"
+                class="h-16 w-auto"
+              />
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-8">
+            <div>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="index.html"
+                    class="hover:text-[#C41E3A] transition-colors text-sm"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="about.html"
+                    class="hover:text-[#C41E3A] transition-colors text-sm"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="sundays.html"
+                    class="hover:text-[#C41E3A] transition-colors text-sm"
+                    >Sundays</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-[#C41E3A] transition-colors text-sm"
+                    >Next Steps</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-[#C41E3A] transition-colors text-sm"
+                    >Give</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-[#C41E3A] transition-colors text-sm"
+                    >Beliefs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-[#C41E3A] transition-colors text-sm"
+                    >Leadership</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-[#C41E3A] transition-colors text-sm"
+                    >Sermons</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-[#C41E3A] transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="hover:text-[#C41E3A] transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

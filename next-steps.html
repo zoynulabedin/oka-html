@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Next Steps - One Kingdom Church</title>
+    <meta
+      name="description"
+      content="Take your next steps with One Kingdom Church"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="font-sans bg-[#0A3B5C]">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-transparent z-50">
+      <div class="container mx-auto px-4 md:px-6 py-3 md:py-4">
+        <div class="flex items-center justify-between">
+          <div class="logo-container">
+            <img
+              src="assets/images/removebg-logo_7.png"
+              alt="One Kingdom Church Logo"
+              class="h-10 md:h-12 w-auto brightness-0 invert"
+            />
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-6 lg:space-x-8 items-center">
+            <a
+              href="index.html"
+              class="nav-link text-white font-bold text-xs lg:text-sm hover:text-[#C41E3A] transition-colors uppercase tracking-wide"
+              >HOME</a
+            >
+            <a
+              href="about.html"
+              class="nav-link text-white font-bold text-xs lg:text-sm hover:text-[#C41E3A] transition-colors uppercase tracking-wide"
+              >ABOUT</a
+            >
+            <a
+              href="sundays.html"
+              class="nav-link text-white font-bold text-xs lg:text-sm hover:text-[#C41E3A] transition-colors uppercase tracking-wide"
+              >SUNDAYS</a
+            >
+            <a
+              href="next-steps.html"
+              class="nav-link active text-white font-bold text-xs lg:text-sm hover:text-[#C41E3A] transition-colors uppercase tracking-wide"
+              >NEXT STEPS</a
+            >
+            <a
+              href="#"
+              class="bg-[#F5E6D3] text-[#0A3B5C] px-5 lg:px-6 py-2 rounded-full text-xs lg:text-sm font-bold hover:bg-white transition-all duration-300 uppercase tracking-wide"
+              >GIVE</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden text-white focus:outline-none"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+          <a
+            href="index.html"
+            class="block text-white font-bold text-sm hover:text-[#C41E3A] transition-colors uppercase tracking-wide"
+            >HOME</a
+          >
+          <a
+            href="about.html"
+            class="block text-white font-bold text-sm hover:text-[#C41E3A] transition-colors uppercase tracking-wide"
+            >ABOUT</a
+          >
+          <a
+            href="sundays.html"
+            class="block text-white font-bold text-sm hover:text-[#C41E3A] transition-colors uppercase tracking-wide"
+            >SUNDAYS</a
+          >
+          <a
+            href="next-steps.html"
+            class="block text-[#C41E3A] font-bold text-sm uppercase tracking-wide"
+            >NEXT STEPS</a
+          >
+          <a
+            href="#"
+            class="block bg-[#F5E6D3] text-[#0A3B5C] px-5 py-2 rounded-full text-sm font-bold hover:bg-white transition-all duration-300 uppercase tracking-wide text-center"
+            >GIVE</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      // Mobile menu toggle
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+        });
+
+      // Header scroll effect
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector("nav");
+        if (window.scrollY > 50) {
+          nav.classList.add("bg-[#0A3B5C]/95", "backdrop-blur-md", "shadow-md");
+          nav.classList.remove("bg-transparent");
+        } else {
+          nav.classList.remove(
+            "bg-[#0A3B5C]/95",
+            "backdrop-blur-md",
+            "shadow-md"
+          );
+          nav.classList.add("bg-transparent");
+        }
+      });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="pt-24 md:pt-28 pb-12 md:pb-16 px-6">
+      <div class="container mx-auto text-center">
+        <h1
+          class="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black text-white mb-12 md:mb-16 tracking-tight uppercase"
+          style="font-family: 'Poppins', sans-serif"
+        >
+          NEXT STEPS
+        </h1>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="pb-16 md:pb-20">
+      <div class="container mx-auto px-6">
+        <div class="space-y-8 md:space-y-12">
+          <!-- Card 1: Interested in OKC? -->
+          <div class="bg-[#F5E6D3] rounded-3xl overflow-hidden shadow-2xl">
+            <div class="grid md:grid-cols-2">
+              <!-- Image -->
+              <div class="relative h-64 md:h-auto min-h-[300px]">
+                <img
+                  src="assets/images/2.jpg"
+                  alt="Interested in OKC"
+                  class="w-full h-full object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-[#0A3B5C]/80 via-[#0A3B5C]/20 to-transparent"
+                ></div>
+                <div class="absolute bottom-8 left-8">
+                  <h2
+                    class="text-4xl md:text-5xl font-black text-[#0A3B5C] uppercase leading-tight"
+                    style="font-family: 'Poppins', sans-serif"
+                  >
+                    INTERESTED<br />IN OKC?
+                  </h2>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="p-8 md:p-10 lg:p-12 flex flex-col justify-center">
+                <p
+                  class="text-[#0A3B5C] text-sm md:text-base leading-relaxed mb-6"
+                >
+                  Dolor sit Lorem ipsum dolor sit amet, coper adipiscing elit,
+                  sed diam nonummy nibh euismod tincidunt ut laoreptrue dolore
+                  magna aliquam erat volutpat.
+                </p>
+                <a
+                  href="#"
+                  class="border-2 border-[#0A3B5C] text-[#0A3B5C] px-8 py-2 rounded-md inline-block font-bold text-sm hover:bg-[#0A3B5C] hover:text-white transition-all duration-300 uppercase text-center w-fit"
+                >
+                  BUTTON
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Join Our Launch Team -->
+          <div class="bg-[#F5E6D3] rounded-3xl overflow-hidden shadow-2xl">
+            <div class="grid md:grid-cols-2">
+              <!-- Image -->
+              <div class="relative h-64 md:h-auto min-h-[300px]">
+                <img
+                  src="assets/images/10.jpg"
+                  alt="Join Our Launch Team"
+                  class="w-full h-full object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-[#0A3B5C]/80 via-[#0A3B5C]/20 to-transparent"
+                ></div>
+                <div class="absolute bottom-8 left-8">
+                  <h2
+                    class="text-4xl md:text-5xl font-black text-[#0A3B5C] uppercase leading-tight"
+                    style="font-family: 'Poppins', sans-serif"
+                  >
+                    JOIN OUR<br />LAUNCH TEAM
+                  </h2>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="p-8 md:p-10 lg:p-12 flex flex-col justify-center">
+                <p
+                  class="text-[#0A3B5C] text-sm md:text-base leading-relaxed mb-6"
+                >
+                  Dolor sit Lorem ipsum dolor sit amet, coper adipiscing elit,
+                  sed diam nonummy nibh euismod tincidunt ut laoreptrue dolore
+                  magna aliquam erat volutpat.
+                </p>
+                <a
+                  href="#"
+                  class="border-2 border-[#0A3B5C] text-[#0A3B5C] px-8 py-2 rounded-md inline-block font-bold text-sm hover:bg-[#0A3B5C] hover:text-white transition-all duration-300 uppercase text-center w-fit"
+                >
+                  BUTTON
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Events -->
+          <div class="bg-[#F5E6D3] rounded-3xl overflow-hidden shadow-2xl">
+            <div class="grid md:grid-cols-2">
+              <!-- Image -->
+              <div class="relative h-64 md:h-auto min-h-[300px]">
+                <img
+                  src="assets/images/11.jpg"
+                  alt="Events"
+                  class="w-full h-full object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-[#0A3B5C]/80 via-[#0A3B5C]/20 to-transparent"
+                ></div>
+                <div class="absolute bottom-8 left-8">
+                  <h2
+                    class="text-4xl md:text-5xl font-black text-[#0A3B5C] uppercase leading-tight"
+                    style="font-family: 'Poppins', sans-serif"
+                  >
+                    EVENTS
+                  </h2>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="p-8 md:p-10 lg:p-12 flex flex-col justify-center">
+                <p
+                  class="text-[#0A3B5C] text-sm md:text-base leading-relaxed mb-6"
+                >
+                  Dolor sit Lorem ipsum dolor sit amet, coper adipiscing elit,
+                  sed diam nonummy nibh euismod tincidunt ut laoreptrue dolore
+                  magna aliquam erat volutpat.
+                </p>
+                <a
+                  href="#"
+                  class="border-2 border-[#0A3B5C] text-[#0A3B5C] px-8 py-2 rounded-md inline-block font-bold text-sm hover:bg-[#0A3B5C] hover:text-white transition-all duration-300 uppercase text-center w-fit"
+                >
+                  BUTTON
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#F5E6D3] text-[#0A3B5C] py-16">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 mb-8">
+          <div>
+            <h3
+              class="text-4xl md:text-5xl font-black mb-6 leading-tight uppercase"
+              style="font-family: 'Poppins', sans-serif"
+            >
+              ONE HOPE.<br />ONE FAMILY.<br />ONE MISSION.
+            </h3>
+            <img
+              src="assets/images/removebg-footer-logo_4.png"
+              alt="One Kingdom Church Logo"
+              class="h-16 w-auto mt-6"
+            />
+          </div>
+          <div class="grid grid-cols-2 gap-8">
+            <div>
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    href="index.html"
+                    class="hover:text-[#C41E3A] transition-colors font-semibold"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="about.html"
+                    class="hover:text-[#C41E3A] transition-colors font-semibold"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="sundays.html"
+                    class="hover:text-[#C41E3A] transition-colors font-semibold"
+                    >Sundays</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="next-steps.html"
+                    class="hover:text-[#C41E3A] transition-colors font-semibold"
+                    >Next Steps</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-[#C41E3A] transition-colors font-semibold"
+                    >Give</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-[#C41E3A] transition-colors font-semibold"
+                    >Beliefs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-[#C41E3A] transition-colors font-semibold"
+                    >Leadership</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-[#C41E3A] transition-colors font-semibold"
+                    >Sermons</a
+                  >
+                </li>
+              </ul>
+              <div class="flex gap-4 mt-6">
+                <a href="#" class="hover:text-[#C41E3A] transition-colors">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="hover:text-[#C41E3A] transition-colors">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
