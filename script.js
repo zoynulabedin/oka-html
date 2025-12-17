@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initSmoothScroll();
   initParallax();
   initMobileMenu();
+  initCoreBeliefsTabs();
 });
 
 // Scroll Animations
@@ -195,6 +196,45 @@ function initMobileMenu() {
         }
       }, 400);
       document.body.style.overflow = "";
+    });
+  });
+}
+
+// Core Beliefs Tabs
+function initCoreBeliefsTabs() {
+  const tabs = document.querySelectorAll(".belief-tab");
+  const contents = document.querySelectorAll(".tab-content");
+
+  if (tabs.length === 0) return;
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", function () {
+      const targetTab = this.getAttribute("data-tab");
+
+      // Remove active class from all tabs
+      tabs.forEach((t) => {
+        t.classList.remove("active");
+        t.classList.remove("border-white");
+        t.classList.add("border-transparent");
+      });
+
+      // Add active class to clicked tab
+      this.classList.add("active");
+      this.classList.remove("border-transparent");
+      this.classList.add("border-white");
+
+      // Hide all content
+      contents.forEach((content) => {
+        content.classList.add("hidden");
+        content.classList.remove("active");
+      });
+
+      // Show target content
+      const targetContent = document.getElementById(targetTab + "-content");
+      if (targetContent) {
+        targetContent.classList.remove("hidden");
+        targetContent.classList.add("active");
+      }
     });
   });
 }
